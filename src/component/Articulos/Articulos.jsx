@@ -1,9 +1,8 @@
 import React from 'react'
 
-function Articulos(props) {
-    console.log(props);
+export const Articulos = ({greeting}) => {
   return (
-    <h1>{props.greeting}</h1>
+    <h1>{greeting}</h1>
   )
 }
 
