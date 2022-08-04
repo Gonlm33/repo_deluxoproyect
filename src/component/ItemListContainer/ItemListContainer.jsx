@@ -8,6 +8,8 @@ const cds = [
   { id: 1, image: "../src/img/emilia-tu-crees-en-mi.png", title: "Emilia- Tu crees en mi" },
   { id: 2, image: "../src/img/Karina-sin-verguenza.png", title: "Karina- Sin verguenza" },
   { id: 3, image: "../src/img/Gardel-inigualable.png", title: "Gardel- Inigualable" },
+  { id: 4, image: "../src/img/Leo-Mattioli-Esto...-Es-romantico.png", title: "Leo Mattioli- Esto... Es romantico" },
+  { id: 5, image: "../src/img/Rodrigo-la-mano-de-dios.png", title: "Rodrigo- La mano de Dios" },
 ];
 
 export const ItemListContainer = ({ texto }) => {
@@ -17,7 +19,7 @@ export const ItemListContainer = ({ texto }) => {
     const getData = new Promise(resolve => {
       setTimeout(() => {
         resolve(cds);
-      }, 3000);
+      }, 1000);
     });
     getData.then(res => setData(res));
 

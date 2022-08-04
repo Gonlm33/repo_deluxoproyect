@@ -1,33 +1,34 @@
 import React from "react";
 import CardWidget from "../CardWidget/CardWidget";
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">LOGO</a>
+                    <NavLink className="navbar-brand" to='/'>LOGO</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav mx-auto mb-5 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Inico</a>
+                                <NavLink className="nav-link active" aria-current="page" to='/'>Inico</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Acerca de nosotros</a>
+                                <NavLink className="nav-link" to='/'>Acerca de nosotros</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Catalogo</a>
+                                <NavLink className="nav-link" to='/catalogo'>Catalogo</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link">Contacto</a>
+                                <NavLink className="nav-link" to='/'>Contacto</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">
+                                <NavLink className="nav-link" to='cart'>
                                 <CardWidget/>
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>
